@@ -1,0 +1,47 @@
+.App-nasa-apod {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+.App-nasa-apod-fields {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 20px 0;
+}
+.App-nasa-apod-fields input[type=date]{
+	border-radius: 3px;
+	border:0;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+.App-nasa-apod-fields-hd {
+	display: flex;
+	flex-direction: column;
+}
+.App-nasa-apod-fields-hd-buttons {
+	flex:1;
+	display: flex;
+}
+.App-nasa-apod-fields-hd-buttons label {
+	flex: 1;
+	justify-content: center;
+}
+.App-nasa-apod-image {
+	width: 100%;
+	flex: 1;
+}
+.app-nasa-apod-video {
+	width: 100%;
+	height: 100%;
+}
+.app-nasa-apod-image-background {
+	width: 70%;
+	height: 100%;
+	margin: 0 auto;
+	background-position: center center !important;
+	background-repeat: no-repeat !important;
+	background-size: 100% auto !important;
+	border-radius: 15px;
+}

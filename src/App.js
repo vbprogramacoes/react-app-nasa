@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import NasaApod from './components/nasa/apod';
 
 function App() {
+  const api_key = 'kvUO022XDgLt13CjQ9S1X0dn3ReRBgybuOvwa4M6';
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Esta é o meu SPA que consome a api.nasa.gov</h1>
       </header>
+      <main className="App-main">
+        <NasaApod api_key={api_key}/>
+      </main>
+      <footer>
+        Não caprichei no CSS pois não era pré requisito
+      </footer>
     </div>
   );
 }
